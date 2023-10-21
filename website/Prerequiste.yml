@@ -1,6 +1,6 @@
 ---
 - name: ping-playbook
-  hosts: test-node
+  hosts: slave-node
   tasks:
     - name: Learning ping module
       ping: 
