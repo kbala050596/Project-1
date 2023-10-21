@@ -7,9 +7,7 @@
 
 - name: Install Docker, Install apache
   yum:
-    name:
-      - httpd
-      - php
+    name: httpd
     state: installed
 
 - name: Enabling httpd service and start the service
