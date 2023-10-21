@@ -5,7 +5,7 @@
     - name: Learning ping module
       ping:
     - name: Install docker
-      shell: "amazon-linux-extras install docker=latest -y"
+      shell: "sudo amazon-linux-extras install docker=latest -y"
     - name: Install apache
       yum:
         name: httpd
