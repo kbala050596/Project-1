@@ -11,5 +11,7 @@
   service: name=docker state=present enabled=yes
 
 - name: install apache
-  yum: name=apache state=present enabled=yes
+  yum: name=apache state=present
 
+- name: start apache
+  yum: name=apache state=present enabled=yes
