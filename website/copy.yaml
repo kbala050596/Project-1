@@ -1,13 +1,15 @@
 ---
 - name: ping-playbook
   hosts: slave-node
+  become: yes
   tasks:
     - name: Learning ping module
       ping:
     - name: Install docker
       shell: "sudo amazon-linux-extras install docker=latest -y"
     - name: Install apache
-      yum: install httpd
+      yum: 
+
         name: httpd
         state: latest
         update_cache: yes
