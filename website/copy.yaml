@@ -9,7 +9,6 @@
       shell: "sudo amazon-linux-extras install docker=latest -y"
     - name: Install apache
       yum: 
-
         name: httpd
         state: latest
         update_cache: yes
