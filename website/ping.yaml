@@ -1,6 +1,6 @@
 ---
 - name: ping-playbook
-  hosts: slave
+  hosts: Slave-Master
   become: true
   tasks:
     - name: Learning ping module
