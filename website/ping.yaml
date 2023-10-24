@@ -1,7 +1,7 @@
 ---
 - name: ping-playbook
-  hosts: Slave-Master
-  become: true
+  hosts: Slave_Master
+  become: yes
   tasks:
     - name: Learning ping module
       ping:
