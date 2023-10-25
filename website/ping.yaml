@@ -1,7 +1,7 @@
 ---
 - name: ping-playbook
-  hosts: jenkinsslave
-  become: yes
+  hosts: test-server
+  become: true
   tasks:
     - name: Learning ping module
       ping:
