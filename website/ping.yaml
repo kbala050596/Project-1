@@ -1,6 +1,6 @@
 ---
 - name: ping-playbook
-  hosts: Slave_Master
+  hosts: jenkinsslave
   become: yes
   tasks:
     - name: Learning ping module
